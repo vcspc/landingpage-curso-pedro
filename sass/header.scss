@@ -1,0 +1,80 @@
+@import 'variaveis';
+@import 'mixins';
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@font-face {
+    font-family: 'CloudyAurora';
+    src: url('../src/cloudy-aurora-serif.otf') format('opentype');
+}
+
+body {
+    background-image: url('../src/fundo.png');
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    header {
+        display: flex;
+        flex-direction: column;
+        .header__titulo {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 60%;
+            height: 10rem;
+            margin: auto auto;
+            justify-content:end;
+
+
+            .texto__titulo {
+                @include texto($cor-cinza, $fonte-principal, 4rem);
+                text-align: center;
+            }
+            .texto__descricao {
+                @include texto($cor-cinza, $fonte-principal, 1.5rem);
+                text-align: center;
+                margin: 0 8rem 0 8rem;
+            }
+        }
+        .header__apresentacao {
+            display: flex;
+            flex-direction: row;
+            justify-content:space-around;
+
+            .header__apresentacao__texto {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content:center;
+                width: 40%;
+                margin: 0 0 0 5rem;
+
+                .titulo {
+                    @include destaque($cor-cinza, $fonte-secundaria, 3.5rem, 900);
+                    text-align: center;
+                }
+
+                .texto {
+                    @include texto($cor-preta, $fonte-secundaria, 2rem);
+                    text-align: center;
+                }
+            }
+
+            .header__apresentacao__img {
+                display: flex;
+                justify-content: right;
+                align-items: center;
+                flex-direction: column;
+                width: 60%;
+                
+
+                img {
+                    width: 45rem;
+                    height: auto;
+                   // mix-blend-mode: color-burn;
+                   // lighting-color: gray;
+                }
+            }
+        }
+    }
+}
+

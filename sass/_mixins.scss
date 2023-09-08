@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import 'variaveis';
+
+    
+    // Botões
+
+@mixin btn ($color, $background, $altura, $largura) {
+    color: $color;
+    background-color: $background;
+    height: $altura;
+    width: $largura;
+}
+
+// Texto
+
+@mixin texto ($color, $fonte, $tamanho) {
+    color: $color;
+    font-family: $fonte;
+    font-size: $tamanho;
+}
+
+@mixin destaque ($color, $fonte, $tamanho, $destaque) {
+    color: $color;
+    font-family: $fonte;
+    font-size: $tamanho;
+    font-weight: $destaque;
+}
+

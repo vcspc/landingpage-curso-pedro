@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@font-face {
+  font-family: "CloudyAurora";
+  src: url("../src/cloudy-aurora-serif.otf") format("opentype");
+}
+body {
+  background-image: url("../src/fundo.png");
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body header {
+  display: flex;
+  flex-direction: column;
+}
+body header .header__titulo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60%;
+  height: 10rem;
+  margin: auto auto;
+  justify-content: end;
+}
+body header .header__titulo .texto__titulo {
+  color: #3B2D50;
+  font-family: "CloudyAurora", serif;
+  font-size: 4rem;
+  text-align: center;
+}
+body header .header__titulo .texto__descricao {
+  color: #3B2D50;
+  font-family: "CloudyAurora", serif;
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 0 8rem 0 8rem;
+}
+body header .header__apresentacao {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+body header .header__apresentacao .header__apresentacao__texto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+  margin: 0 0 0 5rem;
+}
+body header .header__apresentacao .header__apresentacao__texto .titulo {
+  color: #3B2D50;
+  font-family: "Poppins", sans-serif;
+  font-size: 3.5rem;
+  font-weight: 900;
+  text-align: center;
+}
+body header .header__apresentacao .header__apresentacao__texto .texto {
+  color: #000000;
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+  text-align: center;
+}
+body header .header__apresentacao .header__apresentacao__img {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  flex-direction: column;
+  width: 60%;
+}
+body header .header__apresentacao .header__apresentacao__img img {
+  width: 45rem;
+  height: auto;
+}
+
+/*# sourceMappingURL=header.css.map */
